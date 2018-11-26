@@ -1,6 +1,7 @@
 package br.com.senaijandira.pacientes.util;
 
 public class DateUtil {
+
     public int convertToInt(String data){
 
         //"01/01/2000"

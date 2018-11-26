@@ -2,7 +2,7 @@ package br.com.senaijandira.pacientes.model;
 
 public class ApiResult {
 
-   /* private boolean sucesso;
+    private boolean sucesso;
     private String msg;
 
 
@@ -20,5 +20,5 @@ public class ApiResult {
 
     public void setMsg(String msg) {
         this.msg = msg;
-    }*/
+    }
 }

@@ -1,5 +1,6 @@
 package br.com.senaijandira.pacientes.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -19,10 +20,6 @@ public class MainActivity extends AppCompatActivity implements MainView, Adapter
 
     ListView listView;
 
-    @Override
-    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-    }
 
     PacienteAdapter adapter;
 
@@ -74,20 +71,20 @@ public class MainActivity extends AppCompatActivity implements MainView, Adapter
     }
 
     /*ONCLIK PARA QUANDO APERTAR NO BOTÃO ABRIR OUTRA PAGINA*/
-    /*public void abrirCadastro(View view) {
+    public void abrirCadastro(View view) {
         startActivity(new Intent(this, CadastroActivity.class));
-    }*/
+    }
 
     /*IDENTIFICAR O CLIQUE DA LISTA*/
-    /*@Override
+    @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
         /*PEGANDO O CLIQUE*/
-        /*Paciente pacienteSelecionado = adapter.getItem(position);
+        Paciente pacienteSelecionado = adapter.getItem(position);
 
         Intent intent  = new Intent(this, VisualizarActivity.class);
         intent.putExtra("idPaciente", pacienteSelecionado.getId());
 
         startActivity(intent);
-    }*/
+    }
 }

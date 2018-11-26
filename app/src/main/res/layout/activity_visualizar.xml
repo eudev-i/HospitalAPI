@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.VisualizarActivity"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:src="@drawable/pacienteficha"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ficha do XXXXX"
+            android:textSize="30dp"
+            android:paddingTop="20dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="63dp"
+            android:layout_height="wrap_content"
+            android:text="Nome:"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/txtResultNome"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:text="Data de Nascimento:"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/txtDtNascimento"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="125dp"
+            android:layout_height="wrap_content"
+            android:text="Número SUS:"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/txtResultSus"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:layout_width="46dp"
+            android:layout_height="wrap_content"
+            android:text="CPF:"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/txtResultCpf"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:text="Consulta:"
+            android:textSize="20sp"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:id="@+id/txtResultConsulta"/>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:text="NOVA CONSULTA"
+        android:onClick="novaConsulta"
+        android:background="@color/colorPrimary"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"/>
+
+</LinearLayout>
