@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".activity.CadastroActivity" />
-        <activity android:name=".activity.VisualizarActivity"></activity>
+        <activity android:name=".activity.VisualizarActivity" />
     </application>
 
 </manifest>

@@ -41,5 +41,7 @@ public class PacienteAdapter extends ArrayAdapter<Paciente>{
     }
 
 
+
+
 }
 

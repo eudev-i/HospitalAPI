@@ -24,4 +24,7 @@ public interface PacienteService {
     @GET("paciente/{id}")
     Call<Paciente> pacientePorId(@Path("id")int id);
 
+    @GET("/paciente/deletar/{id}")
+    Call<Paciente> deltarPacientePorId(@Path("id")int id);
+
 }

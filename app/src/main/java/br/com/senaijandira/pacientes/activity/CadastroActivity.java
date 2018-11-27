@@ -89,8 +89,7 @@ public class CadastroActivity extends AppCompatActivity implements CadastroView{
 
 
     //Creating a Date Picker
-    public static class DatePickerFragment extends android.support.v4.app.DialogFragment
-            implements DatePickerDialog.OnDateSetListener {
+    public static class DatePickerFragment extends DialogFragment implements DatePickerDialog.OnDateSetListener {
 
         @Override
         public Dialog onCreateDialog(Bundle savedInstanceState) {

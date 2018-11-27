@@ -13,7 +13,7 @@ import br.com.senaijandira.pacientes.view.VisualizarView;
 
 public class VisualizarActivity extends AppCompatActivity implements VisualizarView{
 
-    TextView txtResultNome, txtResultDtNasc, txtResultSus, txtResultCpf, txtResultConsulta;
+    TextView txtResultNome, txtResultDtNasc, txtResultSus, txtResultCpf, txtNomeTitulo;
     VisualizarPresenter presenter;
 
     @Override
@@ -29,7 +29,7 @@ public class VisualizarActivity extends AppCompatActivity implements VisualizarV
         txtResultDtNasc = findViewById(R.id.txtDtNascimento);
         txtResultSus = findViewById(R.id.txtResultSus);
         txtResultCpf = findViewById(R.id.txtResultCpf);
-        txtResultConsulta = findViewById(R.id.txtResultConsulta);
+        txtNomeTitulo = findViewById(R.id.txtNomeTitulo);
 
         presenter = new VisualizarPresenter(this, ServiceFactory.create());
         presenter.pacienteResult(idPaciente);
@@ -41,6 +41,6 @@ public class VisualizarActivity extends AppCompatActivity implements VisualizarV
         txtResultDtNasc.setText(String.valueOf(paciente.getDataNascimento()));
         txtResultSus.setText(paciente.getNumeroSus());
         txtResultCpf.setText(paciente.getCpf());
-        txtResultConsulta.setText(paciente.getConsultas().toString());
+        txtNomeTitulo.setText(paciente.getNome());
     }
 }

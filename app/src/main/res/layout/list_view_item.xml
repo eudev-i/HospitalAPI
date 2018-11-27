@@ -14,7 +14,7 @@
             android:src="@drawable/paciente"/>
     </LinearLayout>
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
@@ -31,7 +31,8 @@
             android:layout_height="wrap_content"
             android:id="@+id/txtCpfPaciente"
             android:textStyle="bold"/>
-    </LinearLayout>
 
+
+    </LinearLayout>
 
 </LinearLayout>
